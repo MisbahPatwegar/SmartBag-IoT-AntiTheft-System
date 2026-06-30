@@ -1,11 +1,11 @@
- IoT Smart Bag: Geo-Fenced Anti-Theft System
+## IoT Smart Bag: Geo-Fenced Anti-Theft System
 An IoT-based smart bag security system built with ESP8266 NodeMCU that detects unauthorized movement, bag opening, and geofence breaches — sending real-time alerts via Telegram Bot.
 
- Overview
+## Overview
 Theft of personal belongings (laptops, wallets, documents) is a common concern in public spaces like buses, railways, and colleges. This project embeds a low-cost IoT circuit inside a regular bag to monitor its status continuously and instantly alert the owner via smartphone 
 
  | Hardware | Components |
- Component 
+ |---|---|
  |ESP8266 NodeMCU | Main microcontroller + Wi-Fi|
  |MPU6050 | Movement/tilt detection (accelerometer)| 
  |Magnetic Reed Switch | Bag open/close detection |
@@ -14,7 +14,7 @@ Theft of personal belongings (laptops, wallets, documents) is a common concern i
  |Red LED | Alert status indicator |
  |8650 Li-ion Battery + TP4056 | Portable power + charging | 
 
-  How It Works
+ ## How It Works
  The system runs in Safe Mode (green LED on) and switches to Alert Mode when any trigger condition is met:
 - Movement Detection – MPU6050 monitors X/Y-axis acceleration.
 - Bag Open Detection – A reed switch + magnet on the zipper detects unauthorized opening (HIGH = open).
@@ -30,21 +30,21 @@ On any trigger: buzzer sounds, red LED turns on, and an instant Telegram alert i
  **Telegram Alerts in Action**
 ![Telegram Alerts](images/telegram_alerts.png)
 
- Software Stack
+## Software Stack
 - Arduino IDE 2.3.8 with ESP8266 board package
 - Libraries: `MPU6050` (Electronic Cats), `ArduinoJson`, `CTBot` (Telegram), `ESP8266WiFi`, `Wire`
 - Telegram Bot (`SmartBagAlert`) created via BotFather for real-time notifications
 
- Results
+## Results
 
  |Test Case|  Result |
-
+ |---|---|
  |Bag lifted suddenly | Alert in < 2 sec|
  |Zipper opened | Alert in < 0.5 sec|
  |Geofence breach | Alert in 60 sec | 
  |Telegram delivery | Avg 1-2 sec|
 
- Future Improvements
+## Future Improvements
 
 - GPS module (NEO-6M) for real-time location tracking
 - Camera module for visual confirmation on alert
