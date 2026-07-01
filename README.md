@@ -22,13 +22,13 @@ Theft of personal belongings (laptops, wallets, documents) is a common concern i
 On any trigger: buzzer sounds, red LED turns on, and an instant Telegram alert is sent via Bot API. System auto-resets to Safe Mode after 5 seconds.
 
  **System Architecture**
-![System Architecture](images/system_architecture.png)
+![System Architecture](system_architecture.png)
 
  **Circuit Setup**
-![Breadboard Setup](images/breadboard_setup.jpg)
+![Breadboard Setup](breadboard_setup.jpg)
 
  **Telegram Alerts in Action**
-![Telegram Alerts](images/telegram_alerts.png)
+![Telegram Alerts](telegram_alerts.png)
 
 ## Software Stack
 - Arduino IDE 2.3.8 with ESP8266 board package
