@@ -49,3 +49,9 @@ On any trigger: buzzer sounds, red LED turns on, and an instant Telegram alert i
 - GPS module (NEO-6M) for real-time location tracking
 - Camera module for visual confirmation on alert
 
+## Author
+
+**Misbah Patwegar**
+BTech Electronics Engineering, Walchand College of Engineering, Sangli
+
+>  Mini-project (2025-26)
